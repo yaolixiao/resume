@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.min.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/ball.css"/>
+    <link rel="stylesheet/less" href="css/resume.less"/>
+    <script src="js/less-2.5.3.min.js"></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 640 * 100 + 'px';
+    </script>
+</head>
+<body>
+<article class="main">
+    <div class="black-bg">
+        <div class="text-box"><span class="text animated" id="text"></span></div>
+    </div>
+
+    <div class="page-box swiper-container">
+        <div class="swiper-wrapper">
+            <!--<div class="page page1 swiper-slide slide1">
+                <img class="me-img" src="img/me.jpg" alt=""/>
+                &lt;!&ndash;<div id="pagecanvas"></div>&ndash;&gt;
+
+                <script>
+
+                    // canvas element and 2D context
+                    var canvas = document.createElement('canvas'),
+                            context = canvas.getContext('2d');
+                    var canvasWidth = window.innerWidth;
+                    canvasHeight = window.innerHeight;
+                    //initialize the array
+                    var particles = [];
+
+                    var pagecanvas = document.getElementById('pagecanvas');
+
+                    init();
+
+                    function init() {
+
+                        // CANVAS SET UP
+
+                        pagecanvas.appendChild(canvas);
+                        canvas.width = canvasWidth;
+                        canvas.height = canvasHeight;
+                        setInterval(loop, 1000 / 30);
+
+
+                    }
+
+                    function loop() {
+
+
+                        // clear the canvas
+                        context.fillStyle = "rgba(0,0,0,0.1)";
+                        context.fillRect(0, 0, canvasWidth, canvasHeight);
+
+                        var particle = new Particle(canvasWidth * .5, canvasHeight * .5);
+                        particle.xVel = Math.random() * 4 - 2;
+                        particles.push(particle);
+
+                        //update all particles
+                        for (i = 0; i < particles.length; i++) {
+                            var particle = particles[i];
+
+                            // render it
+                            particle.render(context);
+                            //update afterwards so it displays in the correct place
+                            particle.update();
+
+                        }
+
+                        //clean up
+                        if (particles.length > 1000) {
+                            particles.shift();
+                        }
+
+                    }
+
+
+                    function Particle(xPos, yPos) {
+
+                        this.xPos = xPos;
+                        this.yPos = yPos;
+
+                        this.yVel = -5;
+                        this.xVel = 0;
+
+                        //add trails!
+                        this.gravity = 0.1;
+                        this.counter = 0;
+
+                        this.render = function (c) {
+                            // set the color of the fill
+                            c.fillStyle = "hsl(" + this.counter + ", 100%, 50%)";
+                            // draw a circle of the required size
+                            c.beginPath();
+                            c.arc(this.xPos, this.yPos, 5, 0, Math.PI * 2, true);
+                            // and fill it
+                            c.fill();
+                        }
+
+                        this.update = function () {
+
+                            this.yVel += this.gravity;
+
+                            this.yPos += this.yVel;
+                            this.xPos += this.xVel;
+
+                            this.counter += 2;
+
+                        }
+
+                    }
+
+                </script>
+
+            </div>-->
+            <div class="page page2 swiper-slide slide2">
+                <div class="shape-box animated rotateIn">
+                    <img class="shape shape_five1" src="img/shape_five1.png"/>
+                    <img class="shape shape_five2" src="img/shape_five2.png"/>
+                </div>
+                <div class="square square1 animated hideitem"></div>
+                <div class="square square2"></div>
+                <div class="square square3 hideitem"></div>
+                <div class="suqare-text hideitem">
+                    <h3><i>IM</i> <i>a</i></h3>
+                    <span>择木而栖的工程师</span>
+                </div>
+                <header class="header animated hideitem">
+                    <span><img src="img/me1.jpg"/></span>
+                </header>
+                <div class="title-box">
+                    <img class="getwork animated" src="img/getwork.png"/>
+                    <img class="resume animated" src="img/resume.png"/>
+                    <img class="myresume animated hideitem" src="img/myresume.png"/>
+
+                    <div class="resume-line resume-line-short animated hideitem"></div>
+                    <div class="resume-line resume-line-long animated hideitem"></div>
+                    <p class="begin-text animated hideitem">勇于开始，才能找到成功的路！</p>
+                </div>
+            </div>
+            <div class="page page3 swiper-slide slide3">
+                <div class="triangle triangle-top"></div>
+                <div class="triangle triangle-bottom"></div>
+                <div class="triangle-line triangle-line-top"></div>
+                <div class="triangle-line triangle-line-bottom"></div>
+                <div class="hexagon hexagon1 animated"></div>
+                <img class="hexagon-head animated hideitem" src="img/header.png" alt=""/>
+
+                <h2 class="infro">
+                    <p>我的信息</p>
+
+                    <p>INFROMATION</p>
+                </h2>
+                <div class="infromation animated hideitem">
+                    <p>姓名：姚力晓</p>
+
+                    <p>性别：男</p>
+
+                    <p>年龄：26</p>
+
+                    <p>工作年限：4年</p>
+                </div>
+                <div class="hexagon-center animated hideitem"></div>
+                <div class="triangle-center triangle-left animated hideitem"></div>
+                <div class="triangle-center triangle-right animated hideitem"></div>
+                <p class="hexagon-center-text animated hideitem">
+                    本人性格开朗活泼，本人性格开朗活泼，本人性格开朗活泼，本人性格开朗活泼，本人性格开朗活泼，本人性格开朗活泼</p>
+
+                <div class="hexagon2 animated hideitem">
+                    <div class="hexagon"></div>
+                    <span>合作<br>畅通</span>
+                </div>
+                <div class="hexagon3 animated hideitem">
+                    <div class="hexagon"></div>
+                    <span>做事<br>认真</span>
+                </div>
+                <div class="hexagon4 animated hideitem">
+                    <div class="hexagon"></div>
+                    <span>善于<br>沟通</span>
+                </div>
+                <div class="hexagon hexagon5 animated hideitem"></div>
+            </div>
+            <div class="page page4 swiper-slide slide4">
+                <div class="title-box">
+                    <img class="work-text animated hideitem" src="img/work_text.png"/>
+                    <img class="experience animated hideitem" src="img/experience.png"/>
+                    <img class="usedwork animated hideitem" src="img/usedwork.png"/>
+
+                    <div class="resume-line resume-line-left resume-line-short animated hideitem"></div>
+                    <div class="resume-line resume-line-left resume-line-long animated hideitem"></div>
+                    <div class="resume-line resume-line-right resume-line-short animated hideitem"></div>
+                    <div class="resume-line resume-line-right resume-line-long animated hideitem"></div>
+                </div>
+                <div class="square"></div>
+                <div class="vertical-line"></div>
+                <div class="experience-model">
+                    <div class="model model1 animated hideitem">
+                        <h3>2012-2014 网页设计</h3>
+                        <span><i></i><em></em></span>
+
+                        <p>1、负责海报，书籍，三折页等设计工作</p>
+
+                        <p>2、设计企业站，用代码实现静态网页</p>
+                    </div>
+                    <div class="model model2 animated hideitem">
+                        <h3>2012-2014 网页设计</h3>
+                        <span><i></i><em></em></span>
+
+                        <p>1、负责海报，书籍，三折页等设计工作</p>
+
+                        <p>2、设计企业站，用代码实现静态网页</p>
+                    </div>
+                    <div class="model model3 animated hideitem">
+                        <h3>2012-2014 网页设计</h3>
+                        <span><i></i><em></em></span>
+
+                        <p>1、负责海报，书籍，三折页等设计工作</p>
+
+                        <p>2、设计企业站，用代码实现静态网页</p>
+                    </div>
+                </div>
+            </div>
+            <div class="page page5 swiper-slide slide5">
+                <div class="shape-box">
+                    <img class="shape shape_six" src="img/shape_six.png"/>
+                    <img class="shape shape_five1 animated" src="img/shape_five1.png"/>
+                    <img class="shape shape_five2 animated zoomIn" src="img/shape_five2.png"/>
+                </div>
+                <div class="title-box">
+                    <img class="major animated hideitem" src="img/major.png"/>
+                    <img class="ability animated hideitem" src="img/ability.png"/>
+                    <img class="myability animated hideitem" src="img/myability.png"/>
+                </div>
+                <div class="bias-shade"></div>
+                <div class="bias-line-top"></div>
+                <div class="bias-line-bottom"></div>
+                <!--<div style="width: 1px;height: 100%;background: red;position: absolute;left: 50%;"></div>-->
+                <div class="ability-box ability-box1 animated hideitem">
+                    <span class="animated">PS <br> 熟练使用</span>
+
+                    <div class="hexagon"></div>
+                </div>
+                <div class="ability-box ability-box-small ability-box2 animated hideitem">
+                    <span class="animated">PS <br> 熟练使用</span>
+
+                    <div class="hexagon"></div>
+                </div>
+                <div class="ability-box ability-box-small ability-box3 animated hideitem">
+                    <span class="animated">PS <br> 熟练使用</span>
+
+                    <div class="hexagon"></div>
+                </div>
+                <div class="ability-box ability-box-small ability-box4 animated hideitem">
+                    <span class="animated">PS <br> 熟练使用</span>
+
+                    <div class="hexagon"></div>
+                </div>
+                <div class="ability-box ability-box-small ability-box5 animated hideitem">
+                    <span class="animated">PS <br> 熟练使用</span>
+
+                    <div class="hexagon"></div>
+                </div>
+                <div class="ability-box ability-box-small ability-box6 animated hideitem">
+                    <span class="animated">PS <br> 熟练使用</span>
+
+                    <div class="hexagon"></div>
+                </div>
+                <div class="ability-box ability-box-small ability-box7 animated hideitem">
+                    <span class="animated">PS <br> 熟练使用</span>
+
+                    <div class="hexagon"></div>
+                </div>
+            </div>
+            <div class="page page6 swiper-slide slide6">
+                <div class="shape-box">
+                    <img class="shape shape_six" src="img/shape_six.png"/>
+                    <img class="shape shape_five1" src="img/shape_five1.png"/>
+                    <img class="shape shape_five2 animated zoomIn" src="img/shape_five2.png"/>
+                </div>
+                <div class="title-box">
+                    <img class="major animated" src="img/objective.png"/>
+                    <img class="ability animated" src="img/career.png"/>
+                    <img class="myability animated" src="img/career_objective.png"/>
+                </div>
+                <div class="bias-shade"></div>
+                <div class="bias-line-top"></div>
+                <div class="bias-line-bottom"></div>
+                <!--<div style="width: 1px;height: 100%;background: red;position: absolute;left: 50%;"></div>-->
+                <div class="heart-box">
+                    <div class="heart-item heart-item4 animated hideitem">
+                        <span class="animated">PS <br> 熟练使用</span>
+
+                        <div class="heart"></div>
+                    </div>
+                    <div class="heart-item heart-item5 animated hideitem">
+                        <span class="animated">熟练使用</span>
+
+                        <div class="heart"></div>
+                    </div>
+                    <div class="heart-item heart-item1 animated hideitem">
+                        <span class="animated">PS <br> 熟练使用</span>
+
+                        <div class="heart"></div>
+                    </div>
+                    <div class="heart-item heart-item2 animated hideitem">
+                        <span class="animated">PS <br> 熟练使用</span>
+
+                        <div class="heart"></div>
+                    </div>
+                    <div class="heart-item heart-item3 animated hideitem">
+                        <span class="animated">PS <br> 熟练使用</span>
+
+                        <div class="heart"></div>
+                    </div>
+                    <div class="heart-item heart-item6 animated hideitem">
+                        <span class="animated">PS <br> 熟练使用</span>
+
+                        <div class="heart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<script src="js/swiper.min.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/resume.js"></script>
+</body>
+</html>
